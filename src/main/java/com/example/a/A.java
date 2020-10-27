@@ -26,4 +26,12 @@ public class A {
 		
 		return "b";
 	}
+	
+	@RequestMapping("/github")
+	public String github() {
+		
+		System.out.println("connected!!!!");
+		
+		return "github";
+	}
 }

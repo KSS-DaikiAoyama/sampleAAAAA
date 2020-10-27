@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="UTF-8" />
+    <title>hello.html</title>
+  </head>
+  <body>
+	<h2>画像の表示</h2>
+	<div th:object="${product}">
+		<p th:text="${product.picPath}" ></p><br><br>
+		
+		<img th:src="@{/images/Moon.jpg}" /><br><br>
+		
+		<img th:src="${product.picPath}" />
+	</div>
+  </body>
+</html>
